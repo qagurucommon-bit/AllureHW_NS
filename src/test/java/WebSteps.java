@@ -30,6 +30,4 @@ public class WebSteps {
     public byte[] makeScreenShot() {
         return ((TakesScreenshot) WebDriverRunner.getWebDriver()).getScreenshotAs(OutputType.BYTES);
     }
-
-
 }

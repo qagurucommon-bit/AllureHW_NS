@@ -17,9 +17,7 @@ public class LabelsTest {
 
     @Test
     public void testDynamicLabels() {
-        Allure.getLifecycle().updateTestCase(
-                t -> t.setName("Проверка наличия New Issue для авторизованного пользователя")
-        );
+        Allure.getLifecycle().updateTestCase(t -> t.setName("Проверка наличия New Issue для авторизованного пользователя"));
         Allure.feature("New Issue в проекте");
         Allure.story("Проверка наличия New Issue");
         Allure.label("owner", "nelliS");
